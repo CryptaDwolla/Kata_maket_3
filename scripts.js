@@ -46,7 +46,7 @@ button.addEventListener("click", function () {
 
 for (let i = 0; i <= repairingList.length; i++) {
   if (i > 5 && window.innerWidth < 1120) {
-    repairingList[i].classList.contains("hidden");
+    repairingList[i].classList.toggle("hidden");
   } else if (i > 7 && window.innerWidth > 1120) {
     repairingList[i].classList.toggle("hidden");
   }
