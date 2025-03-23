@@ -1,0 +1,316 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "TT Lakes";
+  background-color: #f8f8f8;
+}
+
+.swiper {
+  width: 240px;
+  height: 120px;
+  margin-left: 16px;
+}
+
+.repairing-list {
+  list-style: none;
+  display: flex;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.equipment-repairing {
+  width: 100%;
+  background-color: #ffffff;
+}
+
+.equipment-repairing--line {
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  display: flex;
+  max-height: 3px;
+  object-fit: cover;
+}
+
+.equipment-repairing__text {
+  color: #7e7e82;
+  font-weight: 400;
+  margin: 0;
+}
+
+.show-button {
+  display: flex;
+  max-height: 24px;
+  font-weight: 500;
+  border: none;
+  background-color: transparent;
+  /* background: url("expand.svg") no-repeat; */
+  margin-left: 16px;
+  padding-left: 24px;
+  align-items: center;
+}
+
+.repairing-list > a {
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  color: transparent;
+}
+
+.show-button > a {
+  text-decoration: none;
+  color: #1b1c21;
+}
+
+.hidden {
+  display: none;
+}
+
+.animation {
+  transform: rotate(180deg);
+}
+
+.show-button--img {
+  transform: rotate(0deg);
+}
+
+.show-button--img--rotate {
+  transform: rotate(180deg);
+}
+
+
+@media all and (min-width: 320px) {
+  .repairing-list > swiper-slide {
+    width: 240px;
+    height: 72px;
+    margin-left: 16px;
+    margin-bottom: 16px;
+  }
+  .swiper-slide {
+    width: 238px !important;
+    height: 70px;
+    border-radius: 5px;
+    border: 1px solid #eaeaea;
+    background-color: #ffffff;
+  }
+  .equipment-repairing__text {
+    flex-wrap: nowrap;
+    padding: 16px;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: uppercase;
+  }
+  .repairing-list__lenovo {
+    background: url("lenovo.png") 16px 20px no-repeat,
+      url("go.svg") 90% no-repeat;
+  }
+  .repairing-list__samsung {
+    background: url("samsung.png") 16px 17px no-repeat,
+      url("go.svg") 90% no-repeat;
+  }
+  .repairing-list__apple {
+    background: url("apple.png") 16px 12px no-repeat,
+      url("go.svg") 90% no-repeat;
+  }
+  .repairing-list__viewsonic {
+    background: url("viewsonic.png") 16px 26px no-repeat,
+      url("go.svg") 90% no-repeat;
+  }
+  .repairing-list__bosch {
+    background: url("bosch.png") 16px 21px no-repeat,
+      url("go.svg") 90% no-repeat;
+  }
+  .repairing-list__hp {
+    background: url("hp.png") 12px 12px no-repeat, url("go.svg") 90% no-repeat;
+  }
+  .repairing-list__acer {
+    background: url("acer.png") 16px 26px no-repeat, url("go.svg") 90% no-repeat;
+  }
+  .repairing-list__sony {
+    background: url("sony.png") 16px 21px no-repeat, url("go.svg") 90% no-repeat;
+  }
+  .show-button {
+    display: none;
+  }
+  .body {
+    min-width: 0;
+  }
+  .swiper-pagination {
+    height: 15px;
+    margin-left: 25px;
+  }
+  .swiper-pagination-bullet {
+    background-color: #b5b6bc;
+    width: 12px;
+    height: 12px;
+  }
+}
+
+@media all and (min-width: 768px) {
+  .repairing-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 24px;
+  }
+  .repairing-list > li {
+    width: 224px;
+    height: 72px;
+    margin-left: 24px;
+    margin-bottom: 16px;
+  }
+  .equipment-repairing__text {
+    flex-wrap: wrap;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 24px;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: uppercase;
+  }
+  .repairing-list__lenovo {
+    background: url("lenovo.png") 16px 20px no-repeat,
+      url("go.svg") 90% no-repeat;
+    background-color: #ffffff;
+    border: 1px solid #eaeaea;
+    border-radius: 5px;
+  }
+  .repairing-list__samsung {
+    background: url("samsung.png") 16px 17px no-repeat,
+      url("go.svg") 90% no-repeat;
+    background-color: #ffffff;
+    border: 1px solid #eaeaea;
+    border-radius: 5px;
+  }
+  .repairing-list__apple {
+    background: url("apple.png") 16px 12px no-repeat,
+      url("go.svg") 90% no-repeat;
+    background-color: #ffffff;
+    border: 1px solid #eaeaea;
+    border-radius: 5px;
+  }
+  .repairing-list__viewsonic {
+    background: url("viewsonic.png") 16px 26px no-repeat,
+      url("go.svg") 90% no-repeat;
+    background-color: #ffffff;
+    border: 1px solid #eaeaea;
+    border-radius: 5px;
+  }
+  .repairing-list__bosch {
+    background: url("bosch.png") 16px 21px no-repeat,
+      url("go.svg") 90% no-repeat;
+    background-color: #ffffff;
+    border: 1px solid #eaeaea;
+    border-radius: 5px;
+  }
+  .repairing-list__hp {
+    background: url("hp.png") 12px 12px no-repeat, url("go.svg") 90% no-repeat;
+    background-color: #ffffff;
+    border: 1px solid #eaeaea;
+    border-radius: 5px;
+  }
+  .repairing-list__acer {
+    background: url("acer.png") 16px 26px no-repeat, url("go.svg") 90% no-repeat;
+    background-color: #ffffff;
+    border: 1px solid #eaeaea;
+    border-radius: 5px;
+  }
+  .repairing-list__sony {
+    background: url("sony.png") 16px 21px no-repeat, url("go.svg") 90% no-repeat;
+    background-color: #ffffff;
+    border: 1px solid #eaeaea;
+    border-radius: 5px;
+  }
+  .show-button {
+    margin-left: 24px;
+    display: flex;
+  }
+  .swiper {
+    display: none;
+  }
+}
+
+@media all and (min-width: 1120px) {
+  .repairing-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 24px;
+  }
+  .repairing-list > swiper-slide {
+    width: 240px;
+    height: 72px;
+    margin-left: 32px;
+    margin-bottom: 16px;
+  }
+  .equipment-repairing__text {
+    flex-wrap: wrap;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 32px;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: uppercase;
+  }
+  .repairing-list__lenovo {
+    background: url("lenovo.png") 16px 20px no-repeat,
+      url("go.svg") 90% no-repeat;
+    background-color: #ffffff;
+    border: 1px solid #eaeaea;
+    border-radius: 5px;
+  }
+  .repairing-list__samsung {
+    background: url("samsung.png") 16px 17px no-repeat,
+      url("go.svg") 90% no-repeat;
+    background-color: #ffffff;
+    border: 1px solid #eaeaea;
+    border-radius: 5px;
+  }
+  .repairing-list__apple {
+    background: url("apple.png") 16px 12px no-repeat,
+      url("go.svg") 90% no-repeat;
+    background-color: #ffffff;
+    border: 1px solid #eaeaea;
+    border-radius: 5px;
+  }
+  .repairing-list__viewsonic {
+    background: url("viewsonic.png") 16px 26px no-repeat,
+      url("go.svg") 90% no-repeat;
+    background-color: #ffffff;
+    border: 1px solid #eaeaea;
+    border-radius: 5px;
+  }
+  .repairing-list__bosch {
+    background: url("bosch.png") 16px 21px no-repeat,
+      url("go.svg") 90% no-repeat;
+    background-color: #ffffff;
+    border: 1px solid #eaeaea;
+    border-radius: 5px;
+  }
+  .repairing-list__hp {
+    background: url("hp.png") 12px 12px no-repeat, url("go.svg") 90% no-repeat;
+    background-color: #ffffff;
+    border: 1px solid #eaeaea;
+    border-radius: 5px;
+  }
+  .repairing-list__acer {
+    background: url("acer.png") 16px 26px no-repeat, url("go.svg") 90% no-repeat;
+    background-color: #ffffff;
+    border: 1px solid #eaeaea;
+    border-radius: 5px;
+  }
+  .repairing-list__sony {
+    background: url("sony.png") 16px 21px no-repeat, url("go.svg") 90% no-repeat;
+    background-color: #ffffff;
+    border: 1px solid #eaeaea;
+    border-radius: 5px;
+  }
+  .show-button {
+    display: flex;
+    max-height: 24px;
+    font-weight: 500;
+    border: none;
+    background-color: transparent;
+    margin-left: 16px;
+    padding-left: 24px;
+    align-items: center;
+  }
+}
